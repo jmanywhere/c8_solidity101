@@ -1,3 +1,4 @@
+import type { NextPage } from "next";
 import TokenDynamics from "../classComponents/TokenDynamics";
 import { Account } from "../components/Account";
 import { Balance } from "../components/Balance";
@@ -18,7 +19,7 @@ import { Web3Button } from "../components/Web3Button";
 import { WriteContract } from "../components/WriteContract";
 import { WriteContractPrepared } from "../components/WriteContractPrepared";
 
-export function Page() {
+const Page: NextPage = () => {
   return (
     <>
       <header className="flex flex-row justify-between px-12 items-center py-4">
@@ -32,6 +33,6 @@ export function Page() {
       </Connected>
     </>
   );
-}
+};
 
 export default Page;
